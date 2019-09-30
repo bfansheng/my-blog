@@ -1,15 +1,17 @@
 #!/usr/bin
-git_path=E:/30-MyData/bfansheng.github.io
 
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
 cnpm run build
-rm -rf $git_path
-cp ./public $git_path
+
+# 进入生成的文件夹
+cd ./public
 
 git init
 git add -A
 git commit -m 'deploy'
 
-git remote add origin https://github.com/bfansheng/bfansheng.github.io.git
-git push -u origin master
-#git push
+git push -f git@github.com:bfansheng/bfansheng.github.io.git master
 
