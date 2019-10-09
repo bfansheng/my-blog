@@ -2,10 +2,10 @@
 title: java注解
 date: 2019-04-29
 categories: 
- - java
+ - Java
 tags: 
-- java
-- 注解
+ - Java
+ - 注解
 ---
 
 ## 什么时候可以省略键值对写法

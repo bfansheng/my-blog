@@ -1,11 +1,11 @@
 ---
 title: git
-date: 2019-09-29
+date: 2018-10-12
 categories: 
- - git
+ - Tools
 tags: 
-- git
-- 版本控制
+ - git
+ - 版本控制
 ---
 
 <!-- TOC -->
