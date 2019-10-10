@@ -7,15 +7,7 @@ tags:
  - Tomcat
 ---
 
-<!-- TOC -->
-
-- [1. 服务安装](#1-服务安装)
-- [2. 编码设置](#2-编码设置)
-- [3 增加内存。](#3-增加内存)
-- [4 增加线程数](#4-增加线程数)
-- [5 修改用户](#5-修改用户)
-
-<!-- /TOC -->
+[TOC]
 
 **官网下载window zip版本**，以下以tomcat7为例
 
@@ -61,7 +53,7 @@ tags:
 
 ## 5 修改用户
 
-路径${tomcat}/conf/tomcat-users.xml的<tomcat-users>标签中添加
+路径${tomcat}/conf/tomcat-users.xml的`<tomcat-users>`标签中添加
 ```
 <role rolename="manager-gui"/>
 <role rolename="manager-script"/>

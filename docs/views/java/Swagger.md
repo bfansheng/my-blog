@@ -8,6 +8,8 @@ tags:
  - Java
 ---
 
+[TOC]
+
 ## 1. 依赖
 
 maven配置：
@@ -101,7 +103,7 @@ swagger:
 - tags="说明该类的作用"
 - value="该参数没什么意义，所以不需要配置"
 
-## `@ApiOperation`
+### `@ApiOperation`
 
 用在请求的方法上，说明方法的作用
 
@@ -123,7 +125,7 @@ swagger:
 - defaultValue：参数的默认值
 > paramType为body和form的不使用这个注解
 
-## `@ApiResponses`和`@ApiResponse`
+### `@ApiResponses`和`@ApiResponse`
 
 `@ApiResponses`用于请求的方法上，表示一组响应，`@ApiResponse`：用在`@ApiResponses`中，一般用于表达一个**错误的响应信息**
 
@@ -131,6 +133,6 @@ swagger:
 - message：信息，例如"请求参数没填好"
 - response：抛出异常的类
 
-## `@ApiModel`和`@ApiModelProperty`
+### `@ApiModel`和`@ApiModelProperty`
 
 用于响应类上，表示一个返回响应数据的信息（这种一般用在post创建的时候，使用`@RequestBody`这样的场景，**请求参数无法使用 `@ApiImplicitParam` 注解进行描述的时候**）

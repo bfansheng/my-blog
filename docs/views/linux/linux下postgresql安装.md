@@ -8,6 +8,8 @@ tags:
  - Postgresql
 ---
 
+[TOC]
+
 ## 1. 安装rpm包
 
 ```shell
