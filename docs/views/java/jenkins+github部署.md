@@ -15,7 +15,7 @@ tags:
 
 ![jenkins_2](./img/jenkins_2.png)
 
-![jenkins_3](/assets/jenkins_3.png)
+![jenkins_3](./img/jenkins_3.png)
 
 ## github钩子
 
