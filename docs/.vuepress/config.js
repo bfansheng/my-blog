@@ -52,7 +52,10 @@ module.exports = {
     "startYear": "2017"
   },
   "markdown": {
-    "lineNumbers": true
+    "lineNumbers": true,
+	"toc": {
+	  "markerPattern": /^\[toc\]/im
+	}
   },
   "plugins": [
     "@vuepress/medium-zoom",
