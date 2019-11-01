@@ -82,6 +82,6 @@ du --max-depth=1 -h
 
 **注意**：
 
-- `htop`需要手动安装：`yum install htop`，可以通过H（大写）切换仅显示主进程
+- `htop`需要手动安装：`yum install htop`；可以通过H（大写）切换仅显示主进程
 - `glances`需要手动安装：`yum install glances`
 
