@@ -19,6 +19,15 @@ Linux中常用的命令收集整理
 
 ## 文件压缩与解压
 
+### gzip
+
+```bash
+# 压缩
+gzip test.log
+# 解压
+gzip -d test.log.gz
+```
+
 ### tar
 
 ```bash
@@ -84,4 +93,43 @@ du --max-depth=1 -h
 
 - `htop`需要手动安装：`yum install htop`；可以通过H（大写）切换仅显示主进程
 - `glances`需要手动安装：`yum install glances`
+
+## 系统服务systemd
+
+```bash
+# 查看版本
+systemctl --version
+# 查看位置
+whereis systemctl
+# 列出所有可用单元（服务）
+systemctl list-unit-files
+# 列出所有运行中的单元
+systemctl list-units
+# 列出所有失败的单元
+systemctl --failed
+# 查看自启动的软件
+systemctl list-unit-files | grep enable
+# 查看某个单元是否开机启动
+systemctl is-enabled nginx.service
+# 查看某个单元的状态
+systemctl status nginx.service
+# 启动某个单元
+systemctl start nginx.service
+# 重启某个单元
+systemctl restart nginx.service
+# 停止某个单元
+systemctl stop nginx.service
+# 修改了某个单元的配置文件后，重载配置文件
+systemctl daemon-reload
+# 重载某个单元
+systemctl reload nginx.service
+# 设置开机自启动
+systemctl enable nginx.service
+# 关闭开机自启动
+systemctl disable nginx.service
+# 杀死单元
+systemctl kill nginx
+```
+
+
 
