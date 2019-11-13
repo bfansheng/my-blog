@@ -2,7 +2,7 @@
 title: Nginx中location和proxy_pass的斜杠问题
 date: 2019-11-6
 categories: 
- - 其他
+ - 技术
 tags: 
  - Nginx
 ---
