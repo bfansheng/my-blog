@@ -93,6 +93,7 @@ du --max-depth=1 -h
 
 - `htop`需要手动安装：`yum install htop`；可以通过H（大写）切换仅显示主进程
 - `glances`需要手动安装：`yum install glances`
+- `top -p pid`可以指定查看单个进程
 
 ## 系统服务systemd
 
