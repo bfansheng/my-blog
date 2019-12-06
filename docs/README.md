@@ -3,7 +3,7 @@ home: true
 bgImage: '/bg.jpg'
 bgImageStyle: {
   height: '350px',
-  'background-position':'70% 39%'
+  'background-position':'81% 36%'
 }
 faceImage: '/head.png'
 ---
