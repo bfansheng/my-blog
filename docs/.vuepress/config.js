@@ -1,6 +1,6 @@
 module.exports = {
   "title": "bin",
-  "description": "鲜衣怒马少年时 一日看尽长安花",
+  "description": "而你的故事",
   "dest": "public",
   "head": [
     [
