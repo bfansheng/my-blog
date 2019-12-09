@@ -1,6 +1,6 @@
 ---
-layout: post
 title: jenkins+github部署
+date: 2019-10-9
 categories: 
  - Java
 tags:
