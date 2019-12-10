@@ -4,7 +4,7 @@ date: 2019-10-9
 categories: 
  - Java
 tags:
- - jenkins
+ - Jenkins
 ---
 
 ## jenkins创建任务

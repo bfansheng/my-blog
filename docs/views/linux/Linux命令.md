@@ -4,8 +4,7 @@ date: 2019-03-22
 categories: 
  - Linux
 tags: 
- - linux
- - linux命令
+ - Linux
 ---
 
 [TOC]

@@ -4,16 +4,8 @@ date: 2019-10-21
 categories: 
  - Linux
 tags: 
- - linux
+ - Linux
 ---
-
-::: tip
-
-Linux中常用的命令收集整理
-
-:::
-
-<!-- more -->
 
 [TOC]
 

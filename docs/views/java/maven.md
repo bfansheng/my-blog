@@ -4,8 +4,8 @@ date: 2018-10-12
 categories: 
  - Java
 tags: 
- - maven
- - java
+ - Maven
+ - Java
 ---
 
 [TOC]
