@@ -56,9 +56,5 @@ module.exports = {
 	"toc": {
 	  "markerPattern": /^\[toc\]/im
 	}
-  },
-  "plugins": [
-    "@vuepress/medium-zoom",
-    "flowchart"
-  ]
+  }
 }
