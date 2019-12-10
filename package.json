@@ -6,9 +6,10 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
-  "devDependencies": {
+  "dependencies": {
     "vuepress": "1.2.0",
-    "vuepress-theme-reco": "1.2.0-alpha.1"
+    "@vuepress/plugin-medium-zoom": "1.2.0",
+    "vuepress-theme-reco": "1.1.4"
   },
   "description": "my blog"
 }
