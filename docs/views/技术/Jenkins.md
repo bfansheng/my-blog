@@ -13,19 +13,19 @@ tags:
 
 ### jenkins创建任务
 
-![jenkins_0](./img/jenkins_0.png)
+![jenkins_0](./assets/jenkins_0.png)
 
-![jenkins_1](./img/jenkins_1.png)
+![jenkins_1](./assets/jenkins_1.png)
 
-![jenkins_2](./img/jenkins_2.png)
+![jenkins_2](./assets/jenkins_2.png)
 
-![jenkins_3](./img/jenkins_3.png)
+![jenkins_3](./assets/jenkins_3.png)
 
 ### github钩子
 
-![jenkins_4](./img/jenkins_4.png)
+![jenkins_4](./assets/jenkins_4.png)
 
-![jenkins_5](./img/jenkins_5.png)
+![jenkins_5](./assets/jenkins_5.png)
 
 ## svn
 
