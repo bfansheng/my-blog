@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         "text": "时间线",
-        "link": "/timeLine/",
+        "link": "/timeline/",
         "icon": "reco-date"
       }
     ],
