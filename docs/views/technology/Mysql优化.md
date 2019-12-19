@@ -2,7 +2,7 @@
 title: Mysql优化
 date: 2019-11-28
 categories: 
- - 技术
+ - Technology
 tags: 
  - Mysql
 ---

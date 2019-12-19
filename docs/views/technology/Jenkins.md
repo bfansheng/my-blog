@@ -2,7 +2,7 @@
 title: Jenkins部署
 date: 2019-10-9
 categories: 
- - 技术
+ - Technology
 tags:
  - Jenkins
 ---

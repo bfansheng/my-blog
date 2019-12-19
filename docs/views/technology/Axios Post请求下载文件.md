@@ -2,7 +2,7 @@
 title: Axios Post请求下载文件
 date: 2019-12-10
 categories: 
- - 技术
+ - Technology
 tags: 
  - 前端
 ---
