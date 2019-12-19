@@ -2,7 +2,7 @@
 title: git
 date: 2018-10-12
 categories: 
- - Tools
+ - 技术
 tags: 
  - Git
  - 版本控制
