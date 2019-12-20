@@ -23,12 +23,12 @@ module.exports = {
 	themePicker: false,
     "nav": [
       {
-        "text": "首页",
+        "text": "Home",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "时间线",
+        "text": "Timeline",
         "link": "/timeline/",
         "icon": "reco-date"
       }
@@ -37,11 +37,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "分类"
+        "text": "Category"
       },
       "tag": {
         "location": 3,
-        "text": "标签"
+        "text": "Tag"
       }
     },
     "logo": "/head.png",
