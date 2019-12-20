@@ -7,7 +7,7 @@ set -e
 yarn run build
 
 # 进入生成的文件夹
-cd ./public
+cd ./dist
 
 # 如果是发布到自定义域名
 echo 'bfans.xyz' > CNAME

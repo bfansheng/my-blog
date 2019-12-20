@@ -1,6 +1,6 @@
 #!/usr/bin
 
-cd ./public
+cd ./dist
 
 git init
 git add -A
