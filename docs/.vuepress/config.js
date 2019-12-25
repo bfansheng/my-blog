@@ -13,11 +13,11 @@ module.exports = {
     // 设置苹果工具栏颜色
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     // iOS 图标
-    ['link', { rel: 'apple-touch-icon', href: '/head.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/256.png' }],
     // Apple Safari浏览器
     // ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#000000' }],
     // Windows 8 磁贴图标
-    ['meta', { name: 'msapplication-TileImage', content: '/head.png' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/256.png' }],
     // Windows 8 磁贴颜色
     ['meta', { name: 'msapplication-TileColor', content: '#2196F3' }],
     // 用于控制页面缩放，多用于响应式页面开发中
