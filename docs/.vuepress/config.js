@@ -7,7 +7,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     // 顶栏颜色
-    ['meta', { name: 'theme-color', content: '#2196F3' }],
+    ['meta', { name: 'theme-color', content: '#409EFF' }],
     // 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     // 设置苹果工具栏颜色
@@ -19,7 +19,7 @@ module.exports = {
     // Windows 8 磁贴图标
     ['meta', { name: 'msapplication-TileImage', content: '/256.png' }],
     // Windows 8 磁贴颜色
-    ['meta', { name: 'msapplication-TileColor', content: '#2196F3' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#409EFF' }],
     // 用于控制页面缩放，多用于响应式页面开发中
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
   ],
