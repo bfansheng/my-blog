@@ -72,6 +72,20 @@ module.exports = {
           buttonText: "刷新"
         }
       }
+    ],
+	[
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["miku"],
+        clean: true,
+        modelStyle: {
+          position: "fixed",
+          left: "0px",
+          bottom: "0px",
+          opacity: "0.9",
+          zIndex: 99999
+        }
+      }
     ]
   ]
 }
