@@ -25,7 +25,7 @@ module.exports = {
   ],
   theme: "reco",
   themeConfig: {
-	authorAvatar: "head.png",
+	authorAvatar: "/head.png",
     nav: [
       {
         "text": "Home",
