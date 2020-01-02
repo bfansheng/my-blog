@@ -1,7 +1,7 @@
 module.exports = {
-  "title": "bin",
-  "description": "而你的故事",
-  "dest": "dist",
+  title: "bin",
+  description: "而你的故事",
+  dest: "dist",
   locales: { '/': { lang: 'zh-cn' } },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -23,10 +23,10 @@ module.exports = {
     // 用于控制页面缩放，多用于响应式页面开发中
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
   ],
-  "theme": "reco",
-  "themeConfig": {
-	"authorAvatar": "head.png",
-    "nav": [
+  theme: "reco",
+  themeConfig: {
+	authorAvatar: "head.png",
+    nav: [
       {
         "text": "Home",
         "link": "/",
@@ -38,8 +38,8 @@ module.exports = {
         "icon": "reco-date"
       }
     ],
-    "type": "blog",
-    "blogConfig": {
+    type: "blog",
+    blogConfig: {
       "category": {
         "location": 2,
         "text": "Category"
@@ -49,18 +49,25 @@ module.exports = {
         "text": "Tag"
       }
     },
-    "logo": "/head.png",
-    "search": true,
-    "searchMaxSuggestions": 10,
-    "sidebar": "auto",
-    "lastUpdated": "Last Updated",
-    "author": "bin",
-    "startYear": "2017"
+    logo: "/head.png",
+    search: true,
+    searchMaxSuggestions: 10,
+    sidebar: "auto",
+    lastUpdated: "Last Updated",
+    author: "bin",
+    startYear: "2017",
+	friendLink: [
+      {
+        title: '激萌小超超',
+        desc: '性感小超超 在线发图',
+        link: 'http://chaonnect.xyz/'
+      }
+    ]
   },
-  "markdown": {
-    "lineNumbers": true,
-    "toc": {
-      "markerPattern": /^\[toc\]/im
+  markdown: {
+    lineNumbers: true,
+    toc: {
+      markerPattern: /^\[toc\]/im
     }
   },
   plugins: [
