@@ -1,6 +1,6 @@
 module.exports = {
   title: "bin",
-  description: "而你的故事",
+  description: "行到水穷处，坐看云起时",
   dest: "dist",
   locales: { '/': { lang: 'zh-cn' } },
   head: [
