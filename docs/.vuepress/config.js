@@ -68,6 +68,10 @@ module.exports = {
     lineNumbers: true,
     toc: {
       markerPattern: /^\[toc\]/im
+    },
+	extendMarkdown: md => {
+      // 使用更多的 markdown-it 插件!
+      md.use(require('markdown-it-task-lists'))
     }
   },
   plugins: [
