@@ -18,3 +18,4 @@ tags:
 - Lombok
 - MyBatisX
 - Maven Helper
+- MyBatis Log Plugin
