@@ -33,6 +33,10 @@ tags:
 
 ![](./assets/alibaba/1_(5)_1.png)
 
+## 集合初始化时指定初始值大小
+
+![](./assets/alibaba/1_(5)_14.png)
+
 ## Map类K/V能不能存null的情况
 
 ![](./assets/alibaba/1_(5)_16.png)
