@@ -2,7 +2,7 @@
 title: SpringBoot整合MongoDB
 date: 2019-12-9
 categories: 
- - Java
+ - Spring
 tags: 
  - Spring
  - MongoDB
