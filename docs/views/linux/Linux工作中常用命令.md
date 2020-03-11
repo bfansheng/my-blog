@@ -124,5 +124,16 @@ systemctl disable nginx.service
 systemctl kill nginx
 ```
 
+## 查看进程
 
+```bash
+ps -aux
+ps -aux | grep java
+```
+
+## 查看端口占用
+
+```bash
+lsof -i:8080
+```
 
