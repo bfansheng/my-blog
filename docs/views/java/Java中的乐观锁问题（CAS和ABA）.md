@@ -111,3 +111,7 @@ tags:
 操作线程: Thread[主线程,5,main], CAS操作结果: false
 ```
 
+## 参考
+
+1. [JAVA中CAS-ABA的问题解决方案AtomicStampedReference](https://www.jianshu.com/p/8b227a8adbc1)
+2. [什么是ABA问题？](https://www.zhihu.com/question/23281499)
