@@ -7,6 +7,8 @@ tags:
  - Pinpoint
 ---
 
+[TOC]
+
 ## 简介
 
 Pinpoint是一个开源的 APM (Application Performance Management/应用性能管理)工具，用于基于java的大规模分布式系统。
