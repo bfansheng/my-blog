@@ -1,5 +1,5 @@
 ---
-title: Java中的乐观锁问题（CAS和ABA）
+title: CAS更新（乐观锁）
 date: 2020-04-07
 categories: 
  - Java
@@ -11,7 +11,9 @@ tags:
 
 ## CAS
 
-对于内存中的某一个值V，提供一个旧值A和一个新值B。如果提供的旧值V和A相等就把B写入V。这个过程是原子性的。
+**更新某个值时先检查下该值有没有发生变化**，如果**没有发生变化则更新**，否则放弃更新。
+
+CAS的基本思想是认为当前环境中的并发并没有那么高，比较乐观的看待整个并发。
 
 > compare and swap，解决多线程并行情况下使用锁造成性能损耗的一种机制，CAS操作包含三个操作数——内存位置（V）、预期原值（A）和新值(B)。如果内存位置的值与预期原值相匹配，那么处理器会自动将该位置值更新为新值。否则，处理器不做任何操作。无论哪种情况，它都会在CAS指令之前返回该位置的值。CAS有效地说明了“我认为位置V应该包含值A；如果包含该值，则将B放到这个位置；否则，不要更改该位置，只告诉我这个位置现在的值即可。
 
@@ -57,6 +59,29 @@ tags:
 操作线程: Thread[主线程,5,main], a = 1
 操作线程: Thread[干扰线程,5,main], a值变化: 1 -> 2 -> 1
 操作线程: Thread[主线程,5,main], CAS操作结果: true
+```
+
+### 数据库CAS更新
+
+伪代码：
+
+```java
+// 从会议池获取未使用的会议
+MeetingPool meeting = meetingPoolService.getNoUseMeeting();
+
+// cas更新
+MeetingPool updateMeeting = new MeetingPool();
+// 新值，更新会议为已使用
+updateMeeting.setUseStatus(UseStatus.USE);
+
+// 更新时条件带上旧值（即未使用），保证该条记录旧值没被其他线程修改
+QueryWrapper<MeetingPool> filter = new QueryWrapper<MeetingPool>().eq(MeetingPool.ID, meeting.getId())
+    .eq(MeetingPool.USE_STATUS, meeting.getUseStatus());
+if (meetingPoolService.update(updateMeeting, filter)) {
+    // cas更新成功
+} else {
+    // cas更新失败
+}
 ```
 
 ## ABA问题
