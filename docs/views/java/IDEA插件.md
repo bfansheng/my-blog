@@ -19,3 +19,4 @@ tags:
 - MyBatisX
 - Maven Helper
 - MyBatis Log Plugin
+- Codota
