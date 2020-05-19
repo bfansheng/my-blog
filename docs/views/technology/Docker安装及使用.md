@@ -1,5 +1,5 @@
 ---
-title: Docker安装及常用命令
+title: Docker安装及使用
 date: 2020-04-13
 categories: 
  - Technology
@@ -35,7 +35,7 @@ systemctl start docker
 docker run hello-world
 ```
 
-## 配置镜像
+### 配置镜像
 
 从阿里云镜像获取地址：https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors
 
@@ -69,5 +69,60 @@ docker info
 ```bash
  Registry Mirrors:
   https://ygfhfvwl.mirror.aliyuncs.com/
+```
+
+## 容器状态
+
+- created（已创建）
+- restarting（重启中）
+- running（运行中）
+- removing（迁移中）
+- paused（暂停）
+- exited（停止）
+- dead（死亡）
+
+## 常用命令
+
+### 容器相关命令
+
+```bash
+# 获取镜像
+docker pull ubuntu:13.10
+# 通过镜像启动容器（后台运行）
+docker run -itd ubuntu /bin/bash
+# 查看容器进程 -a查看所有
+docker ps
+# 停止容器
+docker stop 容器id/名称
+# 进入容器（容器在后台运行）
+docker exec -it 容器id /bin/bash
+# 导出容器
+docker export 容器id > ubuntu.tar
+cat ubuntu.tar | docker import - test/ubuntu:v1
+# 删除容器
+docker rm 容器id
+# 查看日志
+docker logs -f 容器id/名称
+```
+
+### 镜像相关命令
+
+```bash
+# 查看本地镜像列表
+docker images
+# 查找镜像
+docker search httpd
+# 拉取镜像
+docker pull httpd
+# 删除镜像
+docker rmi hello-world
+# 更新镜像
+docker commit -m="has update" -a="bfans" 容器id runoob/ubuntu:v2
+# 构建镜像，需要有Dockerfile文件。@see springboot-docker
+# -t ：指定要创建的目标镜像名
+# . ：Dockerfile 文件所在目录，可以指定Dockerfile 的绝对路径
+docker build -t runoob/centos:6.7 .
+# 设置镜像标签
+docker tag 镜像id ubuntu/test:dev
 ```
 
