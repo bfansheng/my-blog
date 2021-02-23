@@ -20,3 +20,4 @@ tags:
 - Maven Helper
 - MyBatis Log Plugin
 - Codota
+- GenAllSetter
