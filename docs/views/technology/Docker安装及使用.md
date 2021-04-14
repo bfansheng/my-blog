@@ -105,6 +105,23 @@ docker rm 容器id
 docker logs -f 容器id/名称
 ```
 
+### 例子
+
+```bash
+# 启动容器
+docker run -itd --name flowable-ui  -p 9001:8080 flowable/flowable-ui
+# 复制文件到容器
+docker cp ./mysql-connector-java-8.0.22.jar flowable-ui:/app/WEB-INF/lib/mysql-connector-java-8.0.22.jar
+# 进入容器
+docker exec -it flowable-ui /bin/sh
+# 停止
+docker stop flowable-ui 
+# 启动
+docker start flowable-ui
+# 查看日志
+docker logs -f -t --tail 500 flowable-ui
+```
+
 ### 镜像相关命令
 
 ```bash
