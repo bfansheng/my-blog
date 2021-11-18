@@ -10,5 +10,5 @@ yarn run build
 cd ./dist
 
 # 如果是发布到自定义域名
-echo 'bfans.xyz' > CNAME
+# echo 'bfans.xyz' > CNAME
 
