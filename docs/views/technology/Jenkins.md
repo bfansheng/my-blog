@@ -27,6 +27,32 @@ tags:
 
 ![jenkins_5](./assets/jenkins/jenkins_5.png)
 
+## git pipeline
+
+```shell
+node {
+    stage('git更新') { // for display purposes
+        git credentialsId: 'ee0f5b8e-88fe-4615-b2c2-9344f1c8c162', url: 'http://218.85.80.181:21002/baseframe/ips-module/mms/msg-center.git'    
+    }
+    stage('mvn编译') {
+        sh "cd ./msg-rest"
+        sh 'mvn clean package -U -DskipTests'
+    }
+    stage('存档') {
+        archiveArtifacts 'msg-rest/target/*.jar,src/main/resources/application.yml'
+    }
+    stage('上传') {
+        sh 'scp msg-rest/target/*.jar fzis@192.168.16.88:/home/fzis/app/msg-center'
+    }
+    // withCredentials([sshUserPrivateKey(credentialsId: 'b9fbd26e-fa40-47d7-a4b0-8d113373b39b', keyFileVariable: 'key')]) {
+    //     sh "scp -i ${key} msg-rest/target/*.jar fzis@192.168.16.88:/home/fzis/app/msg-center"
+    // }
+    stage('部署') {
+        sh 'ssh fzis@192.168.16.88 "/home/fzis/app/msg-center/restart.sh"'
+    }
+}
+```
+
 ## svn
 
 ### jar
