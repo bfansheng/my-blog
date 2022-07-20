@@ -10,4 +10,4 @@ tags:
 
 ## 实例
 
-![](assets/APISIX网关/2022-07-20-15-17-39-image.png)
+![](E:\bfansheng\my-blog\docs\views\technology\assets\APISIX\e5cd0babad52d772783c4769c59fdae.png)
