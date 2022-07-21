@@ -9,5 +9,4 @@ tags:
 ---
 
 ## 实例
-
-![](E:\bfansheng\my-blog\docs\views\technology\assets\APISIX\e5cd0babad52d772783c4769c59fdae.png)
+![](./assets/APISIX/e5cd0babad52d772783c4769c59fdae.png)
