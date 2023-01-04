@@ -60,7 +60,9 @@ public class ProxyEnvironmentAware implements EnvironmentAware {
 }
 ```
 2. 方式二：启动命令配置
-> -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1080
+> // 注意：xxx.jar要放在参数后面
+> 
+> java -jar -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1080 xxx.jar
 ## 参考
 
 1. [nginx 正向代理https配置_litGrey的博客-CSDN博客_nginx正向代理https](https://blog.csdn.net/luChenH/article/details/107553493)
