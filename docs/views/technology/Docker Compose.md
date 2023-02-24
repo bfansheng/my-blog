@@ -14,3 +14,10 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 ```
 
+## 更新镜像
+
+```bash
+docker-compose pull
+docker-compose stop
+docker-compose up -d
+```
